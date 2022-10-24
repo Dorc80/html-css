@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Bay</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,22 +15,25 @@
                 <div><img src="assets/leaf.png" alt="leaf"></div>
                 <h1>EasyBay</h1>
             </section>
-            <input type="text" placeholder="Search for anything">
-            <div>
-                Sign In
-                <img src="assets/cart-dark.png" alt="cart-dark">
+            <div class="row align-items-center">
+                <input type="text" placeholder="Search for anything">
+                <img src="assets/search-dark.png" alt="search" class="search">
+            </div>
+            <div class="row align-items-center">
+                <span>Sign In</span>
+                <img src="assets/cart-dark.png" alt="cart-dark" id="cart">
             </div>
         </div>
         <div id="header-bottom">
             <nav class="nav">
                 <ul class="row space-between">
-                    <li>Aeonium</li>
-                    <li>Andormischus</li>
-                    <li>Agave</li>
-                    <li>Albe</li>
-                    <li>Anacampseros</li>
-                    <li>Aristaloe</li>
-                    <li>More ...</li>
+                    <li><a href="#">Aeonium</a></li>
+                    <li><a href="#">Andormischus</a></li>
+                    <li><a href="#">Agave</a></li>
+                    <li><a href="#">Albe</a></li>
+                    <li><a href="#">Anacampseros</a></li>
+                    <li><a href="#">Aristaloe</a></li>
+                    <li><a href="#">More ...</a></li>
                 </ul>
             </nav>
         </div>
@@ -64,7 +66,7 @@
             </div>
         </section>
 
-        <div class="product-sections bg-green-color row space-around">
+        <div class="product-sections bg-green-color-2 row space-around">
             <div class="product col align-items-center">
                 <img src="assets/aeonium-s.jpg" alt="aeonium">
                 <span>Aeonium</span>
@@ -95,7 +97,7 @@
             <div class="row align-items-center">
                 <img src="assets/alert-dark.png" alt="alert">
                 <span>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our <a href="#">cookie policy</a></span>
-                <button class="btn">I Accept</button>
+                <button class="btn" id="accept-btn">I Accept</button>
             </div>
         </div>
     </main>

@@ -1,3 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.nav ul li {
+    list-style-type: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fixed {
+    position: fixed !important;
+    top: 0
+}
+
+body {
+    margin: 0 1rem;
+}
+
 #header {
     margin-bottom: 2rem;
 }
@@ -7,12 +65,19 @@
     padding-bottom: 0.5rem;
 }
 
+.search {
+    width: 1.2rem;
+    position: relative;
+    right: 2rem;
+    cursor: pointer;
+}
+
 #banner-section, .product-sections {
     margin-top: 1.5rem;
 }
 
 #logo div {
-    background-color: #5fcfb3;
+    background-color: #58c0bb;
 }
 
 #logo h1 {
@@ -24,7 +89,11 @@
 }
 
 .bg-green-color {
-    background-color: #5fcfb3;
+    background-color: #58c0bb;
+}
+
+.bg-green-color-2 {
+    background-color: #c1ecea;
 }
 
 h1 {
@@ -36,10 +105,14 @@ h2 {
 }
 
 #header-top input {
-    width: 73rem;
+    width: 68rem;
     height: 2rem;
     border-radius: 18px;
     padding-left: 1rem;
+}
+
+#header-top > div:last-child span {
+    cursor: pointer;
 }
 
 #banner-section header h2 {
@@ -80,15 +153,15 @@ h2 {
 }
 
 .main-picture-1  {
-   height: 31rem;
+   height: 28rem;
 }
 
 .main-picture-2 {
-    height: 21rem;
+    height: 22rem;
 }
 
 .banner-right div {
-    padding: 1rem 1rem;
+    padding: 1.4rem 1rem;
 }
 
 .banner-right div img {
@@ -109,7 +182,7 @@ h2 {
 }
 
 .btn {
-    background-color: #5fcfb3;
+    background-color: #58c0bb;
     color: white;
     padding: 0.5rem 1rem;
     box-shadow: black 2px 2px;
@@ -123,7 +196,7 @@ h2 {
 
 #alert-footer div span {
     padding-left: 1rem;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     width: 82%;
 }
 
@@ -137,4 +210,8 @@ h2 {
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 0.5rem;
+}
+
+#accept-btn:hover, #cart:hover {
+    cursor: pointer;
 }
